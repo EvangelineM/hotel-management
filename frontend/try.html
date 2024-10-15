@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Serenity Suites</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav__logo">
+        <img src="assets/logo.webp" alt="logo" />
+      </div>
+      <ul class="nav__links">
+        <li class="link"><a href="#">Home</a></li>
+        <li class="link"><a href="#">Book</a></li>
+        <li class="link"><a href="#">Blog</a></li>
+        <li class="link"><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <header class="section__container header__container">
+      <div class="header__image__container">
+        <div class="header__content">
+          <h1>Enjoy Your Dream Vacation</h1>
+          <p>Book Hotels, Flights and stay packages at the best price.</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hotels Section -->
+    <section class="section__container popular__container">
+      <h2 class="section__header">Available Hotels</h2>
+      <div id="hotels-grid" class="popular__grid"></div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div id="booking-modal" class="modal hidden">
+      <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <h2>Book Hotel</h2>
+        <form id="booking-form">
+          <input type="text" id="guest-name" placeholder="Your Name" required />
+          <input
+            type="email"
+            id="guest-email"
+            placeholder="Your Email"
+            required
+          />
+          <input type="date" id="check-in" required />
+          <input type="date" id="check-out" required />
+          <button type="submit">Book Now</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
